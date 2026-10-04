@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playbox | Leaderboard 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="marca" href="index.html">PLAY<span>BOX</span></a>
+        <nav class="nav-principal"><a href="index.html">Descobrir</a><a href="catalogo.html">Catálogo</a><a class="nav-ativo" href="leaderboard.html">Leaderboard</a></nav>
+        <div class="conta"><span class="avatar" aria-hidden="true">V</span><span><strong>Visitante</strong><small>Conta de demonstração</small></span></div>
+    </header>
+    <main class="pagina-catalogo">
+        <section class="cabecalho-pagina">
+            <p class="sobretitulo">PLAYBOX • 2026</p>
+            <h1>Leaderboard de filmes</h1>
+            <p>Explore os destaques de 2026 com informações confirmadas e filtre por gênero.</p>
+            <label class="busca-filmes" for="filtro-genero">Escolher categoria
+                <select id="filtro-genero">
+                    <option value="Todos">Todas as categorias</option>
+                    <option value="Ação">Ação</option>
+                    <option value="Animação">Animação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Fantasia">Fantasia</option>
+                    <option value="Ficção científica">Ficção científica</option>
+                    <option value="Terror">Terror</option>
+                </select>
+            </label>
+            <p class="contador" id="contador-leaderboard" aria-live="polite"></p>
+        </section>
+        <ol class="lista-leaderboard" id="lista-leaderboard"></ol>
+        <p class="nota-lista">Seleção editorial de filmes previstos ou lançados em 2026; não é um ranking oficial. Datas e estreias podem mudar. A categoria serve para filtrar a lista.</p>
+    </main>
+    <footer><p>Projeto desenvolvido pelo nosso grupo.</p><p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p></footer>
+    <script src="js/dados-filmes.js"></script>
+    <script src="js/catalogo.js"></script>
+    <script src="js/leaderboard.js"></script>
+</body>
+</html>

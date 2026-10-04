@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Playbox | Catálogo de filmes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="marca" href="index.html">PLAY<span>BOX</span></a>
+        <nav class="nav-principal"><a href="index.html">Descobrir</a><a class="nav-ativo" href="catalogo.html">Catálogo</a><a href="leaderboard.html">Leaderboard</a></nav>
+        <div class="conta"><span class="avatar" aria-hidden="true">V</span><span><strong>Visitante</strong><small>Conta de demonstração</small></span></div>
+    </header>
+    <main class="pagina-catalogo">
+        <section class="cabecalho-pagina">
+            <p class="sobretitulo">ESCOLHA SUA PRÓXIMA SESSÃO</p>
+            <h1>Catálogo de filmes</h1>
+            <p>Explore os filmes com informações confirmadas no catálogo e abra a página de cada título.</p>
+            <label class="busca-filmes">Buscar um filme<input id="busca-filmes" type="search" placeholder="Digite o nome de um filme..." autocomplete="off"></label>
+            <p class="contador" id="contador-filmes" aria-live="polite">Carregando catálogo...</p>
+        </section>
+        <ul class="lista-catalogo" id="lista-catalogo"></ul>
+    </main>
+    <footer><p>Projeto desenvolvido pelo nosso grupo.</p><p>This product uses the TMDB API but is not endorsed or certified by TMDB.</p></footer>
+    <script src="js/dados-filmes.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
